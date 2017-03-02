@@ -2,14 +2,21 @@
 <html>
 <head>
   <title>Gathering Input</title>
+  <script>
+    function getName() {
+      var FullName;
+      FullName=document.getElementById("FirstName").value;
+      document.getElementById("message").innerHTML = FullName;
+    }
+  </script>
   </head>
 <body>
 First name: <input type="text" id="FirstName">
 Last name: <input type="text" id="LastName">
-<button type="button" id="doneButton" onclick="getName();">
+<button type="button" id="doneButton" onclick="getName()";>
   Done
 </button>
 <p id="message">
-</p> 
+</p>
 </body>
 </html>
