@@ -7,6 +7,8 @@
       var FullName;
       FullName=document.getElementById("FirstName").value;
       document.getElementById("message").innerHTML = FullName;
+      LastName=document.getElementById("LastName").value;
+      document.getElementById("message").innerHTML += LastName;
     }
   </script>
   </head>
@@ -16,7 +18,6 @@ Last name: <input type="text" id="LastName">
 <button type="button" id="doneButton" onclick="getName()";>
   Done
 </button>
-<p id="message">
-</p>
+<p id="message" id="message"></p>
 </body>
 </html>
